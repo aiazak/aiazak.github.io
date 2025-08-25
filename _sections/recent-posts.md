@@ -1,3 +1,4 @@
+<!--
 ---
 title: Recent Posts
 order: 3
@@ -15,3 +16,4 @@ auto-header: none
     </li>
   {% endfor %}
 </ul>
+-->
