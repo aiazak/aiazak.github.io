@@ -1,67 +1,73 @@
 ---
 # Frontmatter for Jekyll processing
 ---
+// Define color variables
+$light-blue: #93b7be;
+$mint-cream: #F1F1FA;
+$timberwolf: #d5c7bc;
+$rose-taupe: #785964;
+$onyx: #454545;
 
 // Consolidated color variables
-$color-background: #ffffff; // Main body and default background
-$color-text: #888; // Default text color
-$color-text-heading: #666; // Headings and strong text
-$color-text-heading-strong: #333; // Strong text in heading links
-$color-link-border: rgba(128, 128, 128, 0.5); // Link border-bottom
-$color-link-hover: #E27689; // Link hover color
-$color-form-bg: #fff; // Form input background
-$color-form-bg-alt: rgba(255, 255, 255, 0.75); // Form input alternate background
-$color-form-border: rgba(0, 0, 0, 0.15); // Form input border
-$color-form-shadow: rgba(0, 0, 0, 0.05); // Form input box-shadow
-$color-form-focus: #8ebebc; // Form input focus box-shadow
-$color-form-placeholder: #555; // Form placeholder text
-$color-table-row-alt: #f4f4f4; // Table alternate row background
-$color-table-header: #222729; // Table header background
-$color-table-thead: #444; // Table thead background
-$color-table-tfoot: #eee; // Table tfoot background
-$color-button-bg: #8ebebc; // Button background
-$color-button-hover: #9ececc; // Button hover background
-$color-button-active: #7eaeac; // Button active background
-$color-button-text: #fff; // Button text
-$color-item-shadow: rgba(0, 0, 0, 0.05); // Item box-shadow
-$color-item-header-text: #666; // Item header text
-$color-item-header-bg: #fff; // Item header background
-$color-header-bg: #222629; // Navigation sidebar background
-$color-header-shadow: rgba(0, 0, 0, 0.1); // Header box-shadow
-$color-header-text: #fff; // Header text and logo
-$color-header-text-alt: rgba(255, 255, 255, 0.5); // Logo subtitle and nav links
-$color-header-icon: #41484c; // Nav and social icons
-$color-nav-active-bg: rgba(0, 0, 0, 0.15); // Active nav link background
-$color-nav-active-shadow: rgba(0, 0, 0, 0.125); // Active nav link box-shadow
-$color-nav-active-icon: #e27689; // Active nav link icon
-$color-footer-bg: #dce3e2; // Footer background
-$color-footer-shadow: rgba(0, 0, 0, 0.05); // Footer box-shadow
-$color-footer-shadow-alt: rgba(0, 0, 0, 0.025); // Footer alternate box-shadow
-$color-footer-border: rgba(128, 128, 128, 0.35); // Footer copyright border
-$color-section-shadow: rgba(0, 0, 0, 0.05); // Section box-shadow
-$color-section-shadow-alt: rgba(0, 0, 0, 0.025); // Section alternate box-shadow
-$color-section-dark-text: #ddd; // Dark section text
-$color-section-dark-text-alt: rgba(255, 255, 255, 0.75); // Dark section text fallback
-$color-section-dark-link: #fff; // Dark section links and strong text
-$color-section-shade-one: #81918E; // Section shade-one background
-$color-section-shade-two: #f5fafa; // Section shade-two background
-$color-section-shade-three: #ecf1f1; // Section shade-three background
-$color-section-shade-four: #e8edec; // Section shade-four background
-$color-toggle-bg: rgba(128, 136, 144, 0.5); // Mobile header toggle background
-$color-toggle-icon: #fff; // Mobile header toggle icon
-$color-mobile-header-border: rgba(255, 255, 255, 0.05); // Mobile header bottom border
-$color-mobile-header-shadow: rgba(0, 0, 0, 0.15); // Mobile header bottom box-shadow
+$color-background: $mint-cream; // Main body and default background
+$color-text: $onyx; // Default text color
+$color-text-heading: darken($rose-taupe, 10%); // Headings and strong text
+$color-text-heading-strong: $onyx; // Strong text in heading links
+$color-link-border: rgba($rose-taupe, 0.5); // Link border-bottom
+$color-link-hover: lighten($rose-taupe, 10%); // Link hover color
+$color-form-bg: $mint-cream; // Form input background
+$color-form-bg-alt: rgba($mint-cream, 0.75); // Form input alternate background
+$color-form-border: rgba($onyx, 0.15); // Form input border
+$color-form-shadow: rgba($onyx, 0.05); // Form input box-shadow
+$color-form-focus: $light-blue; // Form input focus box-shadow
+$color-form-placeholder: lighten($rose-taupe, 20%); // Form placeholder text
+$color-table-row-alt: $timberwolf; // Table alternate row background
+$color-table-header: $onyx; // Table header background
+$color-table-thead: darken($onyx, 5%); // Table thead background
+$color-table-tfoot: lighten($timberwolf, 10%); // Table tfoot background
+$color-button-bg: $light-blue; // Button background
+$color-button-hover: lighten($light-blue, 10%); // Button hover background
+$color-button-active: darken($light-blue, 10%); // Button active background
+$color-button-text: $mint-cream; // Button text
+$color-item-shadow: rgba($onyx, 0.05); // Item box-shadow
+$color-item-header-text: $rose-taupe; // Item header text
+$color-item-header-bg: $mint-cream; // Item header background
+$color-header-bg: darken($onyx,10%); // Navigation sidebar background
+$color-header-shadow: rgba($onyx, 0.1); // Header box-shadow
+$color-header-text: $mint-cream; // Header text and logo
+$color-header-text-alt: rgba($mint-cream, 0.5); // Logo subtitle and nav links
+$color-header-icon: lighten($onyx, 20%); // Nav and social icons
+$color-nav-active-bg: rgba($onyx, 0.15); // Active nav link background
+$color-nav-active-shadow: rgba($onyx, 0.125); // Active nav link box-shadow
+$color-nav-active-icon: $timberwolf; // Active nav link icon
+$color-footer-bg: lighten($timberwolf,10%); // Footer background
+$color-footer-shadow: rgba($onyx, 0.05); // Footer box-shadow
+$color-footer-shadow-alt: rgba($onyx, 0.025); // Footer alternate box-shadow
+$color-footer-border: rgba($rose-taupe, 0.35); // Footer copyright border
+$color-section-shadow: rgba($onyx, 0.05); // Section box-shadow
+$color-section-shadow-alt: rgba($onyx, 0.025); // Section alternate box-shadow
+$color-section-dark-text: lighten($mint-cream, 5%); // Dark section text
+$color-section-dark-text-alt: rgba($mint-cream, 0.75); // Dark section text fallback
+$color-section-dark-link: $mint-cream; // Dark section links and strong text
+$color-section-shade-one: darken($mint-cream, 2%); // Section shade-one background
+$color-section-shade-two: lighten($mint-cream, 2%); // Section shade-two background
+$color-section-shade-three: $mint-cream; // Section shade-three background
+$color-section-shade-four: lighten($mint-cream, 5%); // Section shade-four background
+$color-toggle-bg: rgba($rose-taupe, 0.5); // Mobile header toggle background
+$color-toggle-icon: $mint-cream; // Mobile header toggle icon
+$color-mobile-header-border: rgba($mint-cream, 0.05); // Mobile header bottom border
+$color-mobile-header-shadow: rgba($onyx, 0.15); // Mobile header bottom box-shadow
 // Variables from _variables.scss
-$color-accent: #c99065; // Primary accent (may be overridden)
-$color-accent-dark: #2a1f14; // Darker accent
-$color-accent-light: #f4f5f6; // Lighter accent
-$color-text-dark: #2a2f4a; // Dark text
-$color-text-light: #ffffff; // Light text (matches #fff uses)
+$color-accent: $light-blue; // Primary accent
+$color-accent-dark: darken($light-blue, 15%); // Darker accent
+$color-accent-light: lighten($mint-cream, 2%); // Lighter accent
+$color-text-dark: $onyx; // Dark text
+$color-text-light: $mint-cream; // Light text
 
 // Import the theme (for remote_theme or local)
 @import "{{ site.theme }}";
 
-// Override specific styles with new variables (if needed)
+// Override specific styles with new variables
 body {
   background: $color-background;
   color: $color-text;
