@@ -7,7 +7,7 @@
   <meta name="robots" content="{{- page.robots | default: 'index, follow' -}}" />
   {%- unless page.canonical == false -%}<link rel="canonical" href="{{- page.url | absolute_url -}}" />{%- endunless -%}
   
-  <!-- Title, description, author -->
+  <!-- Title, description, author, keywords -->
   {%- capture _page_title -%}
     {%- if page.title -%}{{- page.title | append: ' | ' -}}{%- endif -%}
     {{- site.title | default: "Untitled Website" -}}
@@ -19,6 +19,8 @@
   <title>{{- _page_title -}}</title>
   <meta name="description" content="{{- _page_description -}}" />
   <meta name="author" content="{{- site.author -}}" />
+  <!-- Added keywords meta tag -->
+  <meta name="keywords" content="{{- page.keywords | default: 'angielski w gdyni, korepetycje z angielskiego, nauka angielskiego Gdynia, przygotowanie do matury, FCE, CAE, CPE, angielski w trójmieście, Gdynia matura dwujęzyczna z angielskiego, gdynia przygotowanie do matury rozszerzonej, działki leśne przygotowanie do matury rozszerzonej, gdynie przygotowanie do testu do trójki z angielskiego, gdynia przygotowanie do SAT, gdynia test do III LO angielski, Angielski Gdynia Główna, Angielski Gdynia Działki Leśne, angielski działki leśne, Angielski Gdynia ulica Wolności, Angielski Gdynia Tatrzańska, Gdynia przygotowanie do egzaminu ósmoklasisty, Gdyna Działki Leśne angielski konwersacje, Gdynia działki leśne angielski korepetycje, GDynia działki leśne matura podstawowa z matemartki, gdynia działki leśne egzamin ósmoklasisty z matematyki, gdynia działki leśne egzamin ósmoklasisty z angielskiego, gdynia działki leśne angielski szkoła podstawowa, gdynia centrum angielski szkoła podstawowa, gdynia działki leśne angielski dorośli, Gdynia grabówek angielski, Gdynia Grabówek angielski matura, Gdynia Grabówek angielski egzamin cae, gdynia grabówek egzamin fce, gdynia grabówek egzamin cpe, gdynia grabówek angielski korepetycje, gdynia grabówek angielski lekcje grupowe, gdynia grabówek angielski lekcje indywidualne, gdynia działki leśne korepetycje z matematykigdynia grabówek korepetycje z matematyki, przygotowanie do SAT gdynia, przygotowanie do sat matematyka, przygotowanie do sat gdynia działki leśne, angielski początkujący gdynia, angielski gdynia wolności, angielski gdynia warszawska, angielski gdynia tatrzańska, angielski gdynia śląska, angielski gdynia morska,   ' -}}" />
   
   <!-- Open Graph -->
   <meta property="og:title" content="{{- _page_title -}}" />
@@ -45,5 +47,4 @@
   <script src="{{- 'assets/js/util.js' | relative_url -}}" defer></script>
   <!--[if lte IE 8]><script src="{{- 'assets/js/ie/respond.min.js' | relative_url -}}" defer></script><![endif]-->
   <script src="{{- 'assets/js/main.js' | relative_url -}}" defer></script>
-
 </head>

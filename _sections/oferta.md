@@ -1,5 +1,7 @@
 ---
 title: Oferta
+description: Profesjonalna nauka angielskiego w Gdyni. Oferujemy korepetycje z angielskiego, przygotowanie do matury podstawowej, rozszerzonej, dwujęzycznej oraz testów FCE, CAE, CPE.
+keywords: angielski w gdyni, korepetycje z angielskiego, przygotowanie do matury, FCE, CAE, CPE
 icon: fa-list-ul
 order: 2
 ---

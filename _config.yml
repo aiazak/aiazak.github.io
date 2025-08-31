@@ -30,17 +30,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+# Site settings
 title: Angielski Na Działkach Leśnych
 subtitle: Nauka Angielskiego w Gdyni
-description: >- # this means to ignore newlines until "baseurl:"
-  Aleksandra Kowalska Nauka Angielskiego
-author: Your Incredible Name
+description: Prywatna szkoła angielskiego w Gdyni. Korepetycje z angielskiego, przygotowanie do matury i testów FCE, CAE, CPE.
+author: Aleksandra Kowalska
 email: angielskinadzialkachlesnych@gmail.com
 avatar: assets/images/avatar.jpg
 
 # You'll want to customize url and baseurl for your own site:
 # Github URL
-url: "https://github.com/aiazak/aiazak.github.io.git"  # Replace with your custom domain, e.g., https://example.com
+url: "https://angielskinadzialkachlesnych.pl"  # Replace with your custom domain, e.g., https://example.com
 baseurl: ""  # Leave empty for a root domain
 
 # Social settings
@@ -62,3 +62,7 @@ baseurl: ""  # Leave empty for a root domain
 theme: jekyll-theme-prologue
 # remote_theme: chrisbobbe/jekyll-theme-prologue
 collections: [sections]
+
+# Add plugins for SEO
+plugins:
+  - jekyll-sitemap  # Generates sitemap.xml for search engines
